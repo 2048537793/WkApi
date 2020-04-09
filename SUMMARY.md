@@ -29,6 +29,7 @@
     * [发送链接消息](api-wen-dang/fa-song/fa-song-lian-jie-xiao-xi.md)
     * [发送名片消息](api-wen-dang/fa-song/fa-song-ming-pian-xiao-xi.md)
     * [发送小程序](api-wen-dang/fa-song/fa-song-xiao-cheng-xu-bu-ke-yong.md)
+    * [发送已经收到的文件消息](api-wen-dang/fa-song/fa-song-wen-jian-xiao-xi.md)
     * [发送已经收到的图片消息](api-wen-dang/fa-song/fa-song-yi-jing-shou-dao-de-tu-pian-xiao-xi.md)
     * [发送已经收到的视频消息](api-wen-dang/fa-song/fa-song-yi-jing-shou-dao-de-shi-pin-xiao-xi.md)
   * [好友操作](api-wen-dang/deng-lu/README.md)

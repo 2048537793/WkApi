@@ -1,0 +1,121 @@
+# 行业消息
+
+## 2019年的Xposed技术，到底发生了什么?
+
+```text
+摘自微信安全中心 查看详情请点击  https://mp.weixin.qq.com/s/unk2J5dZOCWgDvdEbWEbpA  
+```
+
+### 1. 2019上半年打击使用外挂行为处理公示 <a id="activity-name"></a>
+
+今年以来，针对微信外挂软件，我们一直在加强打击、重点治理，并多次进行了相关打击公示，如在6月发布[《关于打击"微信营销"外挂的公告》](https://mp.weixin.qq.com/s?__biz=MzA5MzEzNDg3MQ==&mid=2652770254&idx=1&sn=6c896f2de5ca676bb1ca2934c7ba0775&chksm=8b8826b6bcffafa01319720f3c7209dad8af710061d11024d9aafc3eb25fefdc9a42d0bb6ea4&token=114485038&lang=zh_CN&scene=21#wechat_redirect)等。但在明确禁止使用各类外挂的情况下，仍然有部分用户顶风作案，多次违规使用外挂软件推送大量广告等垃圾信息，或通过添加好友等方式骚扰用户。对此，微信安全团队近期也进行了专项清理，并在此对在上半年整体治理情况进行公示：
+
+所有经用户投诉、**并被核实确认有使用外挂行为的帐号**，依据国家相关法律法规及[《腾讯微信软件许可及服务协议》](http://weixin.qq.com/agreement?lang=zh_CN)[《微信个人帐号使用规范》](https://weixin110.qq.com/security/readtemplate?t=security_center_website/article&artid=120813euEJVf160303a2ueAV) ，根据违规程度我们将按照阶梯性处罚原则，进行限制功能（朋友圈、好友添加、附近的人打招呼等）、限制登录等处罚；对于多次违规者，将加重处罚。
+
+**截止2019上半年，共计对上百万明确使用外挂的帐号，进行了短期或永久限制处理。**
+
+微信安全中心提醒，使用外挂属于明确违规行为，常见的微信外挂有以下几类：
+
+**一类是以各种噱头诱导用户直接下载使用的：**
+
+● 一键转发朋友圈：可以批量转发朋友圈图文以及好友发送过来的小视频；
+
+● Android模拟器：在电脑上模拟手机端登录微信，实现和微信手机端一样的操作；
+
+● 红包外挂：当微信收到红包消息之后，自动完成微信抢红包的操作；
+
+● 皮肤微信：可以更换微信logo图标，自定义微信主题；
+
+● 微信多开：在一台设备上使用多个微信号。
+
+**另一类是利用群控技术开发的外挂，通常被包装成“微营销”神器：**
+
+● 微信群控：通过虚拟定位、批量打招呼等方式，实现批量添加好友，自动化批量发朋友圈，一键点赞，一键评论等功能；
+
+● 微信机器人：微信群营销，实现定时群发，自动回复，自动聊天等控制功能；
+
+常见外挂示例
+
+**▼**
+
+![](https://mmbiz.qpic.cn/mmbiz_png/MofBAcBsJ6Vzf2PMVCibvV1v1mxyxgCVc89WyibdvCPWHhIuy6pt0N7y3p0hIsjKFwCQ2lQDuNdHfibtIcVxPpdZg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+
+![](https://mmbiz.qpic.cn/mmbiz_png/MofBAcBsJ6UXpWCicc1yDcB12ZUCpkQPPgq264FicbKmKmQA5rZ1tQZ7RP2yI959xoduxpuInibs2pQEZoEdKyyGA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+
+外挂软件不仅破坏了微信平台的生态平衡和正常运营，还为恶意营销行为提供了便利条件，对正常用户造成骚扰，而且使用外挂软件存在多种风险：
+
+● **有隐私风险**：外挂软件存在收集泄露用户隐私信息、盗取用户帐号密码等风险；
+
+● **威胁财产安全**：很多外挂软件还会植入木马病毒，使用外挂可能被坏人利用，威胁自己的资金安全；
+
+● **被利用骚扰别人**：可能在不知情情况下，被利用来骚扰别人，影响好友关系；
+
+● **助长坏人犯罪**：容易被违法犯罪分子利用，用以发布不良信息、实施欺诈，助长违法犯罪的发生；
+
+● **影响使用微信的稳定性**：山寨开发的外挂软件，极不稳定，会造成微信经常崩溃，可能导致重要沟通信息丢失。
+
+我们再次呼吁用户：
+
+● 请从官方渠道下载微信客户端，不要使用具有多开、自动抢红包、一键群发等功能的“李鬼”微信，也不要使用其他破坏微信软件协议或具有外挂功能的插件及软件；只要正常使用微信，无须担心会被安全策略干预；
+
+●  请用户珍惜自己的帐号使用权，在使用过程中不违反现行法律法规及平台使用规范，不使用任何形式的外挂软件，**我们的安全策略不会波及到正常使用的微信号，但对于存在使用外挂情节的帐号，会根据违规程度进行相应梯度处理；**
+
+● 如果你曾安装或者还在使用外挂，请马上卸载；
+
+● 如果发现朋友圈、微信群里有人使用微信外挂软件，欢迎通过微信客户端、[腾讯110小程序](https://mp.weixin.qq.com/s?__biz=MzA5MzEzNDg3MQ==&mid=2652770331&idx=1&sn=8f39837295e781a66a2db73fd0420efb&chksm=8b883963bcffb0756c2bab4a083030111156daa4812d7bc39d48e6d6d4f6aa634d5e9e6bd90d&mpshare=1&scene=1&srcid=&sharer_sharetime=1565838424091&sharer_shareid=5a36c4cc14fb8effefecbd92a1f291a6&key=66db761f362a769da805a5ba2872296591798af61a0f644cf0d0a32ba6760d69e5f4c7af1788c0ea0110daf4f214ea0cc0905787eff4938f17274dbd464b4845b4c3a9b2cab4dac6a579fdb8ab8989e9&ascene=0&uin=MTM0NTEwMDcwMw%3D%3D&devicetype=iMac+MacBookPro13%2C2+OSX+OSX+10.14.5+build%2818F132%29&version=12031a10&nettype=WIFI&lang=zh_CN&fontScale=100&pass_ticket=UdxWEizve0LBNvH99rmZRI91c7Qdznxag3%2F0F54iLXvwmHuGLKTKX1pWBBuLzbek) 进行投诉，微信安全团队会对投诉内容进行核查，一经确认使用外挂行为，将坚决处理。
+
+## 2. 关于打击"微信营销"外挂的公告
+
+微信安全中心发布了[《开发、推广“数据精灵”外挂干扰微信运营 法院一审判赔500万》](https://mp.weixin.qq.com/s?__biz=MzA5MzEzNDg3MQ==&mid=2652770204&idx=1&sn=1a6cbf8862cd7e408c751ca2eb3ba959&chksm=8b8826e4bcffaff2c1750e58bc6d0064cdb1c587140aca9b2f501f0165ed09af32b1d05d89bc&token=1399042480&lang=zh_CN&scene=21#wechat_redirect)，再次申明了微信严厉打击外挂行为的态度。近日我们发现，仍有部分用户使用基于**Xposed**、substrate等技术框架开发的第三方外挂软件，对微信的流程和数据进行了侵入，篡改微信客户端数据、逻辑，以实现恶意营销、欺诈等目的，对此，微信安全团队将进行专项清理并持续打击。
+
+外挂软件利用（包括且不限于）Xposed、substrate等技术框架，向微信软件的进程空间注入控制等模块，对微信的功能和界面进行修改、添加恶意功能，严重损害用户权益，干扰微信正常运行，属于违法违规行为。
+
+**对于明确使用外挂功能的帐号，一经确认，微信安全团队将做出限制功能直至限制登录等处罚；对于多次违规者，将根据梯度处理原则加重处罚。此外，对于利用xposed、substrate等模块开发恶意功能，骚扰用户、破坏平台环境、非法获利的行为及其经营主体，微信还将保留一切追究其法律责任的权利。**
+
+不法商家基于 Xposed、substrate等技术框架开发的外挂软件中，包含且不限于以下功能：暴力加粉、消息一键群发推送、自动回复机器人、全球虚拟定位、微信群自动推广、微信号批量增删好友等，这些外挂功能滋生并纵容了恶意营销行为，大大提高了欺诈等团伙性质恶意行为发生的可能性，对正常用户造成了骚扰甚至损失，严重扰乱了平台的健康生态，存在严重危害：
+
+▶ 微信外挂为恶意营销行为提供了便利条件，对微信的正常用户造成了骚扰；
+
+▶ 容易被违法犯罪分子利用，用以发布不良信息、实施欺诈，助长了违法犯罪的发生；
+
+▶ 未经腾讯公司授权，篡改微信功能，骚扰正常用户，破坏了微信平台的生态平衡和正常运营；
+
+▶ 存在收集泄露用户隐私信息、盗取用户帐号密码等安全风险。
+
+                    **恶 意 功 能 示 例**  
+
+![](https://mmbiz.qpic.cn/mmbiz_png/MofBAcBsJ6XYWFB8t7ibQZ9mZibew5h7A86fdtewMsFA4XTlHBsXwRuwFvKPUktcG1k5ssRpCXRfhyQe0V7XutLA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+
+![](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+
+
+
+![](https://mmbiz.qpic.cn/mmbiz_png/MofBAcBsJ6XYWFB8t7ibQZ9mZibew5h7A8HYjXZteibHasbQfmj5vicXAuFFdZ8zm6jNLicQ3xWzwsnWhoHjG7Bgvbg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+
+![](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+
+微信团队一直致力于打造绿色、安全、健康的网络环境，反对任何扰乱微信正常使用秩序的行为。对此类严重破坏用户体验的行为，我们将根据《中华人民共和国反不正当竞争法》等法律法规，以及[《腾讯微信软件许可及服务协议》](http://weixin.qq.com/agreement?lang=zh_CN)[《微信个人帐号使用规范》](https://weixin110.qq.com/security/readtemplate?t=security_center_website/article&artid=120813euEJVf160303a2ueAV)持续进行严厉打击。
+
+最后，我们再次呼吁，请用户珍惜自己的帐号使用权，为了你的信息安全和帐号功能正常使用，请不要使用任何形式的外挂软件，尤其是打着各类"微信营销""微营销"旗号但实际上在提供一些外挂服务或功能的。如果你曾安装或者还在使用外挂，请马上卸载。如果发现朋友圈、微信群里有人使用微信外挂软件，欢迎通过微信客户端及小程序“腾讯110”投诉，微信安全团队会对投诉内容进行核查，一经确认，将坚决处理。  
+  
+也再次提醒，软件开发及经营者，请勿开发破坏微信软件系统数据的恶意程序 ，合理合法的提供相关服务。
+
+## 加入我们   <a id="join-us"></a>
+
+{% hint style="danger" %}
+#### 如果您是公司研发人员，请扫描下方二维码，我们将与您详细沟通。
+{% endhint %}
+
+{% hint style="warning" %}
+#### **如果您是个人用户，我们不建议您使用本API，造成的困扰，敬请谅解**
+{% endhint %}
+
+{% hint style="success" %}
+#### 如果您是产品or市场调研人员，建议您将本文档熟读，我们将给予您最快的了解市场方式
+{% endhint %}
+
+![  &#x5BA2;&#x670D;&#x8054;&#x7CFB;&#x5FAE;&#x4FE1;](../.gitbook/assets/image%20%2825%29.png)
+
+  
+
+
