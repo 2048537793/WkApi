@@ -19,7 +19,7 @@
 [**PostMan测试请点击这里**](https://explore.postman.com/user/DCZoyMjyDryaJCD)**，具体步骤请查看API文档，每个接口下面都会有教学，祝您测试顺利**
 {% endhint %}
 
-![](.gitbook/assets/image%20%2838%29.png)
+![](.gitbook/assets/image%20%2839%29.png)
 
 ## 加入我们   <a id="join-us"></a>
 
@@ -31,7 +31,7 @@
 #### 如果您是产品or市场调研人员，建议您将本文档熟读，我们将给予您最快的了解市场方式
 {% endhint %}
 
-![       &#x552E;&#x524D;&#x5BA2;&#x670D;-&#x53EF;&#x53EF;                                         &#x552E;&#x524D;&#x5BA2;&#x670D;-&#x5C0F;&#x8BFA;                                  &#x4EA7;&#x54C1;&#x8D1F;&#x8D23;&#x4EBA;-&#x674E;&#x7ECF;&#x7406;](.gitbook/assets/image%20%2839%29.png)
+![       &#x552E;&#x524D;&#x5BA2;&#x670D;-&#x53EF;&#x53EF;                                         &#x552E;&#x524D;&#x5BA2;&#x670D;-&#x5C0F;&#x8BFA;                                  &#x4EA7;&#x54C1;&#x8D1F;&#x8D23;&#x4EBA;-&#x674E;&#x7ECF;&#x7406;](.gitbook/assets/image%20%2840%29.png)
 
 
 
