@@ -4,14 +4,6 @@ description: 发送图片消息
 
 # 发送图片消息
 
-{% hint style="danger" %}
-**PNG图片格式存在颜色通道丢失，JPG格式正常**
-{% endhint %}
-
-**简要描述：**
-
-* 发送图片消息
-
 **请求URL：**
 
 * `http://localhost:18081/sendImage`
@@ -40,7 +32,7 @@ description: 发送图片消息
 ```text
 {
     "wId": "0000016e-63eb-f319-0001-ed01076abf1f",
-    "wcId": "azhichao",
+    "wcId": "LoChaX",
     "content": "http://photocdn.sohu.com/20120323/Img338614056.jpg"
 }
 ```

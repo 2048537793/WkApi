@@ -10,21 +10,21 @@ description: 发送已经收到的视频消息
 
 **请求URL：**
 
-* `http://localhost:18081/sendRecvVideo`
+* `http://域名地址/sendRecvVideo`
 
 **请求方式：**
 
-* POST
+* POST 
 
 **请求头Headers：**
 
 * Content-Type：application/json
-* Authorization：Authorization值（登录获取二维码信息接口中返回的认证信息值）
+* Authorization：login接口返回
 
 **参数：**
 
 | 参数名 | 必选 | 类型 | 说明 |
-| :--- | :--- | :--- | :--- |
+| :---: | :---: | :---: | :---: |
 | wId | 是 | string | 微信实例ID |
 | wcId | 是 | string | 微信号/群号 |
 | content | 是 | string | xml视频内容 |
@@ -32,13 +32,13 @@ description: 发送已经收到的视频消息
 **返回数据：**
 
 | 参数名 | 类型 | 说明 |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | code | int | 1000成功，10001失败 |
 | msg | string | 反馈信息 |
 
 **请求参数示例**
 
-```text
+```javascript
 {
     "wId": "0000016f-4621-dde5-0002-390493cab4dc",
     "wcId": "zhongweiyu789",
@@ -48,7 +48,7 @@ description: 发送已经收到的视频消息
 
 **成功返回示例**
 
-```text
+```javascript
 {
     "message": "发送成功",
     "code": "1000",
@@ -58,7 +58,7 @@ description: 发送已经收到的视频消息
 
 **错误返回示例**
 
-```text
+```javascript
 {
     "message": "失败",
     "code": "1001",

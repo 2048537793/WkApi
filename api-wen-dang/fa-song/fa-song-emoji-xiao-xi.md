@@ -1,16 +1,12 @@
----
-description: 发送已经收到的文件消息
----
-
-# 发送已经收到的文件消息
+# 发送Emoji消息
 
 **简要描述：**
 
-* 发送文件
+* 发送emoji动图表情
 
 **请求URL：**
 
-* `http://域名地址/sendFile`
+* `http://域名地址/sendEmoji`
 
 **请求方式：**
 
@@ -26,9 +22,9 @@ description: 发送已经收到的文件消息
 | 参数名 | 必选 | 类型 | 说明 |
 | :---: | :---: | :---: | :---: |
 | wId | 是 | string | 微信实例ID |
-| wcId | 是 | string | 单聊被发送人账号，群聊群账号 |
-| path | 是 | string | 文件url链接（从[下载文件接口](../xiao-xi-jie-shou/xia-zai-xiao-xi-nei-rong-ji-jiang-kai-fang/xia-zai-wen-jian-ji-jiang-kai-fang.md)取） |
-| fileName | 是 | string | 文件名 |
+| wcId | 是 | string | 微信号/群号 |
+| imageMd5 | 是 | string | 取回调中xml中md5字段值 |
+| imgSize | 是 | string | 取回调中xml中len字段值 |
 
 **返回数据：**
 
@@ -41,10 +37,10 @@ description: 发送已经收到的文件消息
 
 ```javascript
 {
-   "wId": "0000016f-a805-4715-0001-848f9a297a40",
-   "wcId":"jack_623555049",
-   "path": "https://xc-1300726975.cos.ap-shanghai.myqcloud.com/%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6.txt",
-   "fileName": "文件.txt"
+    "wId": "00000171-78df-0aad-000c-70e4a3ce7d70",
+    "wcId": "LoChaX",
+    "imageMd5": "4cc7540a85b5b6cf4ba14e9f4ae08b7c",
+    "imgSize":"102357"
 }
 ```
 
@@ -52,7 +48,7 @@ description: 发送已经收到的文件消息
 
 ```javascript
 {
-    "message": "成功",
+    "message": "发送成功",
     "code": "1000",
     "data": null
 }

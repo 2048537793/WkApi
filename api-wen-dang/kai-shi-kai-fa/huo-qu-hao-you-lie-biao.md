@@ -1,8 +1,8 @@
 # 获取好友列表
 
 {% hint style="info" %}
-* **获取好友列表之前必须调用**[**初始化好友列表接口**](https://www.wkteam.cn/api-wen-dang2/deng-lu/initFriendLists.html)**。**
-* **此接口不会返回好友详细信息，如需获取详细信息，请调用**[**获取联**](https://www.wkteam.cn/api-wen-dang2/hao-you-cao-zuo/queryUserInfo.html)
+* **获取好友列表之前必须调用**[**初始化好友列表接口。**](https://docs.wkteam.cn/api-wen-dang/kai-shi-kai-fa/huo-qu-yong-hu-ji-ben-xin-xi)\*\*\*\*
+* **此接口不会返回好友详细信息，如需获取详细信息，请调用**[**获取联系人信息**](../deng-lu/huo-qu-lian-xi-ren-xin-xi.md)\*\*\*\*
 {% endhint %}
 
 **请求URL：**

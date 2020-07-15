@@ -4,17 +4,19 @@ description: 设置个人头头像
 
 # 设置个人头头像
 
+> **此接口调用后，需回到首页重启下WeChat，可查看最新头像**
+
 **简要描述：**
 
 * 设置个人头像
 
 **请求URL：**
 
-* `http://localhost:18081/sendHeadImage`
+* `http://域名地址/sendHeadImage`
 
 **请求方式：**
 
-* POST
+* POST 
 
 **请求头Headers：**
 
@@ -24,20 +26,20 @@ description: 设置个人头头像
 **参数：**
 
 | 参数名 | 必选 | 类型 | 说明 |
-| :--- | :--- | :--- | :--- |
+| :---: | :---: | :---: | :---: |
 | wId | 是 | string | 微信实例ID |
 | path | 是 | string | 图片url链接 |
 
 **返回数据：**
 
 | 参数名 | 类型 | 说明 |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | code | int | 1000成功，10001失败 |
 | msg | string | 反馈信息 |
 
 **请求参数示例**
 
-```text
+```javascript
 {
    "wId": "0000016f-a2cb-9a5c-0003-63bc8acbec08",
    "path": "https://xc-1300726975.cos.ap-shanghai.myqcloud.com/timg.jpg"
@@ -47,7 +49,7 @@ description: 设置个人头头像
 
 **成功返回示例**
 
-```text
+```javascript
 {
     "message": "成功",
     "code": "1000",
@@ -57,15 +59,11 @@ description: 设置个人头头像
 
 **错误返回示例**
 
-```text
+```javascript
 {
     "message": "失败",
     "code": "1001",
     "data": null
 }
 ```
-
-{% hint style="info" %}
-**生效需等待10秒~1分钟，点头像即可查看**
-{% endhint %}
 

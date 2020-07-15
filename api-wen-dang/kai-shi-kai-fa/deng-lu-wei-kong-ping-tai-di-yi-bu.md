@@ -11,7 +11,7 @@ description: 登录微控平台（第一步）
 
 **请求方式：**
 
-* POST
+* POST JSON
 
 **请求头Headers：**
 

@@ -2,9 +2,9 @@
 
 {% hint style="info" %}
 * **获取群列表之前必须调用**[**初始化群列表接口**](https://www.wkteam.cn/api-wen-dang2/deng-lu/initGroupList.html)**。**
-* **此接口仅会** **获取保存到通讯录的群,聊天列表的群获取不到，未获取的群,有人在群内发消息的话会有消息回调， 开发者此刻调用**[**获取群详情接口**](https://www.wkteam.cn/api-wen-dang2/qun-cao-zuo/queryGroupDetail.html)**再保存到自己数据库中就可以了。**
+* **此接口仅会** **获取保存到通讯录的群,聊天列表的群获取不到，未获取的群,有人在群内发消息的话会有消息回调， 开发者此刻调用**[**获取群详情接口**](../qun-cao-zuo/huo-qu-qun-xiang-qing-xin-xi.md)**再保存到自己数据库中就可以了。**
 * **比如说手机上三年前不说话的群，侧滑删除了，然后你换了手机也不会取到的 ，有人说了话他才会置顶，原理就是各个终端（Android、IOS、桌面版微信）取得了消息回调，又去获取群了详情 本地数据库缓存了下来 更新的ui，让用户感知的**
-* **此接口不会返回群详细信息，如需获取群详细信息，也是调用**[**获取联系人接口**](https://www.wkteam.cn/api-wen-dang2/hao-you-cao-zuo/queryUserInfo.html)
+* **此接口不会返回群详细信息，如需获取群详细信息，也是调用**[**获取联系人接口**](../deng-lu/huo-qu-lian-xi-ren-xin-xi.md)\*\*\*\*
 {% endhint %}
 
 **请求URL：**

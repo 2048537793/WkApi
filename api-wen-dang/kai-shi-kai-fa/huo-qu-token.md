@@ -10,19 +10,42 @@ description: 获取微信二维码（第二步）
 
 **请求方式：**
 
-* POST
+* POST JSON
 
 **请求头Headers:（别忘了传）**
 
 * Content-Type：application/json
-* **Authorization：login接口返回**
+* **Authorization：login接口返回 ！！！**
 
 **参数：**
 
-| 参数名 | 必选 | 类型 | 说明 |
-| :--- | :--- | :--- | :--- |
-| wcId | 否 | string | 登录的微信id （首次扫码不需要传，历史扫码必须传！！！用来找上次登录设备的）[执行登录接口](https://www.wkteam.cn/api-wen-dang2/deng-lu/zhi-xing-wei-xin-deng-lu.html)会返回此字段，记得保存数据库里 |
-| type | 是 | int | 登陆方式，传2哦 |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+      <th style="text-align:left">&#x5FC5;&#x9009;</th>
+      <th style="text-align:left">&#x7C7B;&#x578B;</th>
+      <th style="text-align:left">&#x8BF4;&#x660E;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">wcId</td>
+      <td style="text-align:left">&#x5426;</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">
+        <p>&#x767B;&#x5F55;&#x7684;&#x5FAE;&#x4FE1;id &#xFF08;&#x9996;&#x6B21;&#x626B;&#x7801;&#x4E0D;&#x9700;&#x8981;&#x4F20;&#xFF0C;&#x5386;&#x53F2;&#x626B;&#x7801;&#x5FC5;&#x987B;&#x4F20;&#x7528;&#x6765;&#x627E;&#x4E0A;&#x6B21;&#x767B;&#x5F55;&#x8BBE;&#x5907;&#x7684;&#xFF09;</p>
+        <p><a href="https://docs.wkteam.cn/api-wen-dang/kai-shi-kai-fa/untitled">&#x6267;&#x884C;&#x767B;&#x5F55;&#x63A5;&#x53E3;</a>&#x4F1A;&#x8FD4;&#x56DE;&#x6B64;&#x5B57;&#x6BB5;&#xFF0C;&#x8BB0;&#x5F97;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x5E93;&#x91CC;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">type</td>
+      <td style="text-align:left">&#x662F;</td>
+      <td style="text-align:left">int</td>
+      <td style="text-align:left">&#x767B;&#x9646;&#x65B9;&#x5F0F;&#xFF0C;&#x4F20;2&#x5373;&#x53EF;</td>
+    </tr>
+  </tbody>
+</table>
 
 **返回数据：**
 
@@ -31,14 +54,14 @@ description: 获取微信二维码（第二步）
 | code | int | 1000成功，10001失败 |  |
 | msg | string | 反馈信息 |  |
 | data |  |  |  |
-| wId | string | 微信实例ID  **（本值非固定的，每次重新登录会返回新的，数据库记得实时更新wid）** |  |
+| wId | string | 微信实例ID  **（本值非固定的，每次重新扫码登录会返回新的，数据库记得实时更新wid）** |  |
 | qrCodeUrl | string | 扫码登录地址 |  |
 
 {% hint style="danger" %}
 * 调用本接口得到二维码图片地址
-* 调用执行登录接口（**此时接口不会返回，是根据用户是否扫码返回数据，最长等待150S**）
+* 调用[执行登录接口](https://docs.wkteam.cn/api-wen-dang/kai-shi-kai-fa/untitled)（**此时接口不会返回，是根据用户是否扫码返回数据，最长等待150S**）
 * 开发者将本接口**返回的二维码让用户去扫码**
-* **扫码结束后，方才的执行登录接口会自动返回登录成功或者登录失败**
+* **扫码结束后，方才的**[**执行登录接口**](https://docs.wkteam.cn/api-wen-dang/kai-shi-kai-fa/untitled)**会返回登录成功或者登录失败**
 * 注意：请求所有**接口**需在**header包裹Authorization\(必须\)**
 {% endhint %}
 

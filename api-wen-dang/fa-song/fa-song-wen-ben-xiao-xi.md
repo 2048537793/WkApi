@@ -4,10 +4,6 @@ description: 发送文本消息
 
 # 发送文本消息
 
-**简要描述：**
-
-* 发送文本消息
-
 **请求URL：**
 
 * `http://localhost:18081/sendText`
@@ -36,7 +32,7 @@ description: 发送文本消息
 ```text
 {
     "wId": "0000016e-63eb-f319-0001-ed01076abf1f",
-    "wcId": "azhichao",
+    "wcId": "LoChaX",
     "content": "天行健，君子以自强不息"
 }
 ```
