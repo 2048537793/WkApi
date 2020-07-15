@@ -34,22 +34,6 @@
 
 {% file src="../.gitbook/assets/gui-dang.zip" caption="微信养号资料大全" %}
 
-## 加入我们   <a id="join-us"></a>
-
-{% hint style="danger" %}
-#### 如果您是公司研发人员，请扫描下方二维码，我们将与您详细沟通。
-{% endhint %}
-
-{% hint style="warning" %}
-#### **如果您是个人用户，我们不建议您使用本API，造成的困扰，敬请谅解**
-{% endhint %}
-
-{% hint style="success" %}
-#### 如果您是产品or市场调研人员，建议您将本文档熟读，我们将给予您最快的了解市场方式
-{% endhint %}
-
-![  &#x5BA2;&#x670D;&#x8054;&#x7CFB;&#x5FAE;&#x4FE1;](../.gitbook/assets/image%20%2825%29.png)
-
 
 
 

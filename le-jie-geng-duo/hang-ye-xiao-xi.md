@@ -1,5 +1,11 @@
 # 行业消息
 
+## 2020-7月
+
+{% hint style="danger" %}
+* 朋友圈功能限制，所有副设备必须连续在线满足三天才可以发送
+{% endhint %}
+
 ## 2019年的Xposed技术，到底发生了什么?
 
 ```text
@@ -35,12 +41,6 @@
 ● 微信机器人：微信群营销，实现定时群发，自动回复，自动聊天等控制功能；
 
 常见外挂示例
-
-**▼**
-
-![](https://mmbiz.qpic.cn/mmbiz_png/MofBAcBsJ6Vzf2PMVCibvV1v1mxyxgCVc89WyibdvCPWHhIuy6pt0N7y3p0hIsjKFwCQ2lQDuNdHfibtIcVxPpdZg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
-
-![](https://mmbiz.qpic.cn/mmbiz_png/MofBAcBsJ6UXpWCicc1yDcB12ZUCpkQPPgq264FicbKmKmQA5rZ1tQZ7RP2yI959xoduxpuInibs2pQEZoEdKyyGA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
 
 外挂软件不仅破坏了微信平台的生态平衡和正常运营，还为恶意营销行为提供了便利条件，对正常用户造成骚扰，而且使用外挂软件存在多种风险：
 
@@ -81,18 +81,6 @@
 ▶ 未经腾讯公司授权，篡改微信功能，骚扰正常用户，破坏了微信平台的生态平衡和正常运营；
 
 ▶ 存在收集泄露用户隐私信息、盗取用户帐号密码等安全风险。
-
-                    **恶 意 功 能 示 例**  
-
-![](https://mmbiz.qpic.cn/mmbiz_png/MofBAcBsJ6XYWFB8t7ibQZ9mZibew5h7A86fdtewMsFA4XTlHBsXwRuwFvKPUktcG1k5ssRpCXRfhyQe0V7XutLA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
-
-![](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
-
-
-
-![](https://mmbiz.qpic.cn/mmbiz_png/MofBAcBsJ6XYWFB8t7ibQZ9mZibew5h7A8HYjXZteibHasbQfmj5vicXAuFFdZ8zm6jNLicQ3xWzwsnWhoHjG7Bgvbg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
-
-![](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
 
 微信团队一直致力于打造绿色、安全、健康的网络环境，反对任何扰乱微信正常使用秩序的行为。对此类严重破坏用户体验的行为，我们将根据《中华人民共和国反不正当竞争法》等法律法规，以及[《腾讯微信软件许可及服务协议》](http://weixin.qq.com/agreement?lang=zh_CN)[《微信个人帐号使用规范》](https://weixin110.qq.com/security/readtemplate?t=security_center_website/article&artid=120813euEJVf160303a2ueAV)持续进行严厉打击。
 
