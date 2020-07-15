@@ -60,5 +60,5 @@
 #### 如果您是产品or市场调研人员，建议您将本文档熟读，我们将给予您最快的了解市场方式
 {% endhint %}
 
-![      &#x552E;&#x524D;&#x5BA2;&#x670D;-&#x53EF;&#x53EF;                                          &#x552E;&#x524D;&#x5BA2;&#x670D;-&#x5C0F;&#x8BFA;                                      &#x4EA7;&#x54C1;&#x8D1F;&#x8D23;&#x4EBA;-&#x674E;&#x7ECF;&#x7406;](.gitbook/assets/image%20%2840%29.png)
+![           &#x552E;&#x524D;&#x5BA2;&#x670D;-&#x53EF;&#x53EF;                                      &#x552E;&#x524D;&#x5BA2;&#x670D;-&#x5C0F;&#x8BFA;                                 &#x4EA7;&#x54C1;&#x8D1F;&#x8D23;&#x4EBA;-&#x674E;&#x7ECF;&#x7406;](.gitbook/assets/image%20%2840%29.png)
 
