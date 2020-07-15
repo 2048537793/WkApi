@@ -26,7 +26,7 @@ description: 用于状态异常处理场景和批量或者单个下线场景！�
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
 | account | 是 | string | 账号 |
-| wcIds | 是 | list | 须下线的wcId\(可从[查看账号下已登录的微信号](cha-xun-zhang-hao-xia-yi-deng-lu-de-wei-xin-hao.md)获取\) |
+| wcIds | 是 | list | 须下线的wcId |
 
 **返回数据：**
 

@@ -48,7 +48,7 @@ description: 获取某个标签好友列表
     "code": "1000",
     "data": [
         "wxid_znokudqcgvnr22",
-        "azhichao"
+        "LoChaX"
     ]
 }
 ```

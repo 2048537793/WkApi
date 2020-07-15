@@ -4,6 +4,11 @@ description: 此接口会将所有在本系统登录的微信号下线！！！
 
 # 退出微控平台
 
+{% hint style="info" %}
+* 此接口会将所有在本系统登录的微信号下线！！！
+* 此接口也会导致Authorization失效，需要调用登录微控平台
+{% endhint %}
+
 **简要描述：**
 
 * 退出登录
@@ -19,7 +24,7 @@ description: 此接口会将所有在本系统登录的微信号下线！！！
 **请求头Headers：**
 
 * Content-Type：application/json
-* Authorization：login接口返回
+* Authorization：l**ogin接口返回**
 
 **返回数据：**
 
