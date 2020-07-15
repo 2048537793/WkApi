@@ -26,8 +26,8 @@ description: 修改群名
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
 | wId | 是 | string | 微信实例ID |
-| chatroom | 是 | string | 群id |
-| topic | 是 | string | 群名称 |
+| chatRoomId | 是 | string | 群id |
+| content | 是 | string | 群名称 |
 
 **返回数据：**
 
@@ -41,8 +41,8 @@ description: 修改群名
 ```text
 {
    "wId": "0000016f-a333-7aa8-0003-69ed91049a90",
-   "chatroom": "22270365143@chatroom",
-   "topic": "微信群1"
+   "chatRoomId": "22270365143@chatroom",
+   "content": "微信群1"
 }
 ```
 

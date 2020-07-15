@@ -1,16 +1,12 @@
----
-description: 群保存到通讯录
----
-
-# 群保存到通讯录
+# 群管理操作（仅限群主）
 
 **简要描述：**
 
-* 群保存\|取消到通讯录
+* 群管理操作
 
 **请求URL：**
 
-* `http://域名地址/showInAddressBook`
+* `http://域名/operateChatRoom`
 
 **请求方式：**
 
@@ -27,15 +23,17 @@ description: 群保存到通讯录
 | :---: | :---: | :---: | :---: |
 | wId | 是 | String | 微信实例标识 |
 | chatRoomId | 是 | String | 群号 |
-| flag | 是 | int | 3：保存到群通讯录   2： 从通讯录移除群 |
+| wcId | 是 | String | 群成员微信号，多个用 "," 分割 |
+| type | 是 | int | 1：添加群管理（可添加多个微信号） 2：删除群管理（可删除多个） 3：转让（只能转让一个微信号） |
 
 **请求参数示例**
 
 ```javascript
 {
-    "wId": "349be9b5-8734-45ce-811d-4e10ca568c67",
-    "chatRoomId": "24343869723@chatroom",
-    "flag":0
+    "wId": "xxxxxx",
+    "chatRoomId": "24608539283@chatroom",
+    "wcId": "wxid_0zssg6z7ivlm22"，
+    "type": 3
 }
 ```
 

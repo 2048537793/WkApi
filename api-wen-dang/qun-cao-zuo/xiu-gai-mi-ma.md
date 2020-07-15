@@ -2,100 +2,113 @@
 description: 获取群成员
 ---
 
-# 获取群成员
+# 获取群成员列表
 
 **简要描述：**
 
-* 获取群成员列表
+* 获取群成员
 
 **请求URL：**
 
-* `http://localhost:18081/getChatRoomMember`
+* `http://域名地址/getChatRoomMember`
 
 **请求方式：**
 
-* POST
+* POST 
+
+**请求头Headers：**
+
+* Content-Type：application/json
+* Authorization：login接口返回
 
 **参数：**
 
 | 参数名 | 必选 | 类型 | 说明 |
-| :--- | :--- | :--- | :--- |
-| wId | 是 | string | 微信实例ID |
-| wcId | 是 | string | 群微信号 |
-
-**返回数据：**
-
-| 参数名 | 类型 | 说明 |
-| :--- | :--- | :--- |
-| code | int | 1000成功，10001失败 |
-| msg | string | 反馈信息 |
-| data |  |  |
-| userName | String | 微信号 |
-| nickName | String | 昵称 |
-| displayName | String | 群昵称 |
-| bigHeadImgUrl | String | 头像 |
-| smallHeadImgUrl | String | 头像（缩略图） |
-| inviteUser | String | 邀请人微信号 |
+| :---: | :---: | :---: | :---: |
+| wId | 是 | String | 微信实例标识 |
+| chatRoomId | 是 | String | 群号 |
 
 **请求参数示例**
 
-```text
+```javascript
 {
-    "wId": "0000016e-6343-089e-0001-e2ef939176f6",
-    "wcId": "23321854893@chatroom"
+    "wId": "349be9b5-8734-45ce-811d-4e10ca568c67",
+    "chatRoomId": "24343869723@chatroom"
 }
 ```
 
 **成功返回示例**
 
-```text
+```javascript
 {
     "message": "成功",
     "code": "1000",
     "data": [
+       {
+    "message": "成功",
+    "code": "1000",
+    "data": [
         {
-            "userName": "wxid_o4g4lw3y8bvj12",
-            "nickName": "飞飞飞",
-            "displayName": null,
-            "bigHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/Yic6yVibOib4ndwVGeic93u1cPZvtUibiclzQZiaaQSWLFBicNmtdHmMhfeFDkiaoEB6iaVlyPoK2Qp8pLA51UMbuAeORU2UcSmw79G9dibpDPTKRL4Eec/0",
-            "smallHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/Yic6yVibOib4ndwVGeic93u1cPZvtUibiclzQZiaaQSWLFBicNmtdHmMhfeFDkiaoEB6iaVlyPoK2Qp8pLA51UMbuAeORU2UcSmw79G9dibpDPTKRL4Eec/132",
-            "inviteUser": "wxid_6mq1pu8ngj3r22"
+            "chatRoomId": "24343869723@chatroom",
+            "userName": "wxid_wl9qchkanp9u22",
+            "nickName": "微控通知小助手（机器人）",
+            "chatRoomOwner": null,
+            "bigHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/jmfWqHiaA0aUN4N5py9N1Xn5ciaYBiaicnbsrqngibwM8TbDmmicPhZmBt0Lm71u6ToHLHLwN1UKsxaKu7BYSycVCwiaalSJm6OVeadLcR1w7RLgUU/0",
+            "smallHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/jmfWqHiaA0aUN4N5py9N1Xn5ciaYBiaicnbsrqngibwM8TbDmmicPhZmBt0Lm71u6ToHLHLwN1UKsxaKu7BYSycVCwiaalSJm6OVeadLcR1w7RLgUU/132",
+            "v1": null,
+            "memberCount": 0,
+            "chatRoomMembers": null
         },
         {
-            "userName": "wxid_32g5el0eplju22",
-            "nickName": "刘建宏",
-            "displayName": null,
-            "bigHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/AGdHfibweZiccfTNwPvyYoIjpr76XmNP6IqvcuW3ZY47Oj3BvtozFHklz3Dbrr1g1xOPHNVbhlS5ocjaYn2V2wTCOMWMxykBiclcgfN4LVeJDA/0",
-            "smallHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/AGdHfibweZiccfTNwPvyYoIjpr76XmNP6IqvcuW3ZY47Oj3BvtozFHklz3Dbrr1g1xOPHNVbhlS5ocjaYn2V2wTCOMWMxykBiclcgfN4LVeJDA/132",
-            "inviteUser": "wxid_6mq1pu8ngj3r22"
+            "chatRoomId": "24343869723@chatroom",
+            "userName": "wxid_i6qsbbjenjuj22",
+            "nickName": "微控Team_Mr Li",
+            "chatRoomOwner": null,
+            "bigHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/3zrHQmnoxM5QgibxXZVBEmN0njuGsz7Jvam47xn4XG2IkiaAshFpET1E5TstsmmicF2eFWS5aibeozibO2Kc5Uibxic0DSpibDqcEHEB4krlS7XPycY/0",
+            "smallHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/3zrHQmnoxM5QgibxXZVBEmN0njuGsz7Jvam47xn4XG2IkiaAshFpET1E5TstsmmicF2eFWS5aibeozibO2Kc5Uibxic0DSpibDqcEHEB4krlS7XPycY/132",
+            "v1": null,
+            "memberCount": 0,
+            "chatRoomMembers": null
         },
         {
-            "userName": "wxid_cf2r2mdypejh32",
-            "nickName": "Gun🦑",
-            "displayName": null,
-            "bigHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/rIRpZ5WSDQuCs49sA6TicCatGu8MwdpnbAWqUk6CBg378jWAIXEAicaP2ias92dFcSlXPKE2Y9JpoDc3TAV6SuC8rXgEQrukicqiaVfvTbATyHN4/0",
-            "smallHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/rIRpZ5WSDQuCs49sA6TicCatGu8MwdpnbAWqUk6CBg378jWAIXEAicaP2ias92dFcSlXPKE2Y9JpoDc3TAV6SuC8rXgEQrukicqiaVfvTbATyHN4/132",
-            "inviteUser": "wxid_6mq1pu8ngj3r22"
-        },
-        {
-            "userName": "wxid_6mq1pu8ngj3r22",
-            "nickName": "为了更美好的明天而战",
-            "displayName": null,
-            "bigHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/8wIWia4DaMD9cf6gmmledibDOicW4FRI0LmicBOxHasH3JLcauD7CQX6dGXRC0XoMCoONzevicYFeMQcRVmYh1uPMxEnibDiagwCnQbPBcd0fdFT7s/0",
-            "smallHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/8wIWia4DaMD9cf6gmmledibDOicW4FRI0LmicBOxHasH3JLcauD7CQX6dGXRC0XoMCoONzevicYFeMQcRVmYh1uPMxEnibDiagwCnQbPBcd0fdFT7s/132",
-            "inviteUser": null
+            "chatRoomId": "24343869723@chatroom",
+            "userName": "wxid_ylxtflcg0p8b22",
+            "nickName": "售前客服-小诺 (工作日9:00-18:00)",
+            "chatRoomOwner": null,
+            "bigHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/V886f8JuVBzJowFajp1E77ibbHB2PtoL42Hg5aP0icC8uk65ouzI5HzicmK0iaLiaJDghoYDCwInI59Cibd1esic39UlHGI5OzEZiaQkCRyapia23rBg/0",
+            "smallHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/V886f8JuVBzJowFajp1E77ibbHB2PtoL42Hg5aP0icC8uk65ouzI5HzicmK0iaLiaJDghoYDCwInI59Cibd1esic39UlHGI5OzEZiaQkCRyapia23rBg/132",
+            "v1": null,
+            "memberCount": 0,
+            "chatRoomMembers": null
         }
+    ]
+}
+
     ]
 }
 ```
 
 **错误返回示例**
 
-```text
+```javascript
 {
     "message": "失败",
     "code": "1001",
     "data": null
 }
 ```
+
+**返回数据：**
+
+| 参数名 | 类型 | 说明 |
+| :---: | :---: | :---: |
+| code | String | 1000成功  10001失败 |
+| msg | String | 反馈信息 |
+| data | JSONObject |  |
+| chatRoomId | String | 群号 |
+| userName | String | 群成员微信号 （假如需要手机上显示的微信号或更详细的信息，则需要再调用[获取群成员详情接口获取](https://www.wkteam.cn/api-wen-dang2/qun-cao-zuo/queryGroupMemberDetail.html)） |
+| nickName | String | 群成员昵称 |
+| bigHeadImgUrl | String | 大头像 |
+| smallHeadImgUrl | String | 小头像 |
+| chatRoomMemberFlag | int |  |
 

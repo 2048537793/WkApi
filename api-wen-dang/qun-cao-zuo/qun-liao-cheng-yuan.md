@@ -28,7 +28,7 @@ description: 群聊@
 | wId | 是 | string | 微信实例ID |
 | wcId | 是 | string | 群号 |
 | content | 是 | string | 文本内容消息 |
-| ant | 否 | string | 微信号原始Id\(获取好友信息接口取得userName字段\)  |
+| at | 否 | string | 微信号原始Id\(获取好友信息接口取得userName字段\)  |
 | **返回数据：** |  |  |  |
 
 | 参数名 | 类型 | 说明 |

@@ -1,16 +1,12 @@
----
-description: 退出群聊
----
-
-# 退出群聊
+# 修改我在本群的昵称
 
 **简要描述：**
 
-* 退出群聊
+* 修改我在某群的昵称
 
 **请求URL：**
 
-* `http://域名地址/quitChatRoom`
+* `http://域名/updateIInChatRoomNickName`
 
 **请求方式：**
 
@@ -25,22 +21,15 @@ description: 退出群聊
 
 | 参数名 | 必选 | 类型 | 说明 |
 | :---: | :---: | :---: | :---: |
-| wId | 是 | string | 微信实例ID |
-| chatRoomId | 是 | string | 群id |
-
-**返回数据：**
-
-| 参数名 | 类型 | 说明 |
-| :---: | :---: | :---: |
-| code | int | 1000成功，10001失败 |
-| msg | string | 反馈信息 |
+| wId | 是 | String | 微信实例标识 |
 
 **请求参数示例**
 
 ```javascript
 {
-   "wId": "0000016f-a340-c2d7-0003-6ab83bc1e64a",
-   "chatRoomId": "22270365143@chatroom"
+    "wId": "4941c159-48dc-4271-b0d0-f94adea39127",
+    "chatRoomId": "23282491030@chatroom",
+    "nickName":"啦啦啦"
 }
 ```
 
@@ -63,4 +52,12 @@ description: 退出群聊
     "data": null
 }
 ```
+
+**返回数据：**
+
+| 参数名 | 类型 | 说明 |
+| :---: | :---: | :---: |
+| code | int | 1000成功  10001失败 |
+| msg | string | 反馈信息 |
+| data | JSONObject |  |
 

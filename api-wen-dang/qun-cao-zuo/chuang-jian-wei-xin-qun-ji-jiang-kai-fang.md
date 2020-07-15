@@ -4,71 +4,75 @@ description: 创建微信群
 
 # 创建微信群
 
-**简要描述：**
+{% hint style="info" %}
+创建后，手机上不会显示该群，往该群主动发条消息手机即可显示
+{% endhint %}
 
-* 创建微信群
+* 创建群聊
 
 **请求URL：**
 
-* `http://localhost:18081/createChatroom`
+* `http://域名地址/createChatroom`
 
 **请求方式：**
 
-* POST
+* POST 
 
 **请求头Headers：**
 
 * Content-Type：application/json
-* Authorization：Authorization值（登录获取二维码信息接口中返回的认证信息值）
-
-**创建后，如果返回结果中没有群头像，可以调用getContactFromServer获取群的详细信息。如果手机上没有显示该群，可以往该群主动发条消息。**
+* Authorization：login接口返回
 
 **参数：**
 
 | 参数名 | 必选 | 类型 | 说明 |
-| :--- | :--- | :--- | :--- |
-| wId | 是 | string | 微信实例ID |
-| topic | 是 | string | 群名称 |
-| userNameList | 是 | string | 微信id列表，以逗号分隔（微信ID 从获取联系人列表接口取，friend字段下面的username） |
-
-**返回数据：**
-
-| 参数名 | 类型 | 说明 |
-| :--- | :--- | :--- |
-| code | int | 1000成功，10001失败 |
-| msg | string | 反馈信息 |
+| :---: | :---: | :---: | :---: |
+| wId | 是 | String | 微信实例标识 |
+| userList | 是 | String | 群成员微信号，多个已 "," 分割，（必须传输2个微信号以上才可创建群聊） |
+| topic | 否 | String | 群名 |
 
 **请求参数示例**
 
-```text
+```javascript
 {
-   "wId": "0000016f-a340-c2d7-0003-6ab83bc1e64a",
-   "topic": "创建微信群-对外开放",
-   "userNameList": "zhongweiyu789,wxid_lr6j4nononb921,wxid_ao4ziqc2g9b922"
+    "wId": "349be9b5-8734-45ce-811d-4e10ca568c67",
+    "topic":"啦啦啦",
+    "userList":"wxid_wl9qchkanp9u22,wxid_i6qsbbjenjuj22"
 }
 ```
 
 **成功返回示例**
 
-```text
+```javascript
 {
     "message": "成功",
     "code": "1000",
     "data": {
-        "roomName": "24086860353@chatroom",
-        "topic": "chuangjianweixinqunduiwaikaifang",//手机上返回正确
-        "bigHeadImgUrl": null
+        "chatRoomID": "22264491511@chatroom",
+        "base64": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCACLAIsDASIAAhEBAxEB/8QAHwAAAQUBXXXXXXXXXbSac8Uif8ATeM5/Jq9Zoo/s+l3f4f5DeYVX0X4/wCZw/hrQdTstXtprixEUYZ97mRSQCrY6H1IruKKK7KVJUY8sThq1XWlzSR//9k=",
+        "status": 1
     }
 }
 ```
 
 **错误返回示例**
 
-```text
+```javascript
 {
     "message": "失败",
     "code": "1001",
     "data": null
 }
 ```
+
+**返回数据：**
+
+| 参数名 | 类型 | 说明 |
+| :---: | :---: | :---: |
+| code | String | 1000成功  10001失败 |
+| msg | String | 反馈信息 |
+| data | JSONObject |  |
+| chatRoomID | String | 群号 |
+| base64 | String | 群二维码 |
+| status | int | 状态 |
 

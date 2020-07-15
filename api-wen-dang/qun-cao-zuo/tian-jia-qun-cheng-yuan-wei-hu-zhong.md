@@ -10,45 +10,45 @@ description: 添加群成员
 
 **请求URL：**
 
-* `http://localhost:18081/addChatRoomMember`
+* `http://域名地址/addChatRoomMember`
 
 **请求方式：**
 
-* POST
+* POST 
 
 **请求头Headers：**
 
 * Content-Type：application/json
-* Authorization：Authorization值（登录获取二维码信息接口中返回的认证信息值）
+* Authorization：login接口返回
 
 **参数：**
 
 | 参数名 | 必选 | 类型 | 说明 |
-| :--- | :--- | :--- | :--- |
+| :---: | :---: | :---: | :---: |
 | wId | 是 | string | 微信实例ID |
-| chatroom | 是 | string | 群id |
-| wcId | 是 | string | 微信号 |
+| chatRoomId | 是 | String | 群号 |
+| userList | 是 | String | 群成员微信号，多个已 "," 分割 |
 
 **返回数据：**
 
 | 参数名 | 类型 | 说明 |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | code | int | 1000成功，10001失败 |
 | msg | string | 反馈信息 |
 
 **请求参数示例**
 
-```text
+```javascript
 {
-   "wId": "0000016f-a333-7aa8-0003-69ed91049a90",
-   "chatroom": "22270365143@chatroom",
-   "wcId": "jack_623555049"
+    "wId": "349be9b5-8734-45ce-811d-4e10ca568c67",
+    "chatRoomId":"24187765053@chatroom",
+    "userList":"wxid_ew6i9qdxlinu12,wxid_nqo37ves8w5t22"
 }
 ```
 
 **成功返回示例**
 
-```text
+```javascript
 {
     "message": "成功",
     "code": "1000",
@@ -58,7 +58,7 @@ description: 添加群成员
 
 **错误返回示例**
 
-```text
+```javascript
 {
     "message": "失败",
     "code": "1001",
