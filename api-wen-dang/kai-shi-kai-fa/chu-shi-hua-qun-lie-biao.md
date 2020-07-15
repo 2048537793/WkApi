@@ -1,16 +1,8 @@
----
-description: 初始化好友列表
----
-
-# 初始化好友列表
-
-{% hint style="info" %}
-**获取好友列表之前必须调用此接口。**
-{% endhint %}
+# 初始化群列表
 
 **请求URL：**
 
-* `http://域名地址/initializeFriends`
+* `http://域名地址/initChatRoom`
 
 **请求方式：**
 
@@ -59,7 +51,7 @@ description: 初始化好友列表
 
 | 参数名 | 类型 | 说明 |
 | :---: | :---: | :---: |
-| code | int | 1000成功、10001失败 |
+| code | int | 1000成功  10001失败 |
 | msg | string | 反馈信息 |
 | data | JSONObject | 无 |
 

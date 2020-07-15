@@ -4,14 +4,10 @@ description: 登录微控平台（第一步）
 
 # 登录微控平台（第一步）
 
-**简要描述：**
-
-* 登录微控平台
-
 **请求URL：**
 
-* `http://localhost:18081/member/login`
-* `域名地址：把http://localhost:18081替换成`[`http://134.175.73.113:8080/`](http://134.175.73.113:8080/)`（所有接口都要替换）`
+* **`http://域名地址/member/login`**
+* **`域名地址：http://xingshenwk.com/（后续所有接口记得替换）`**
 
 **请求方式：**
 
@@ -47,13 +43,15 @@ description: 登录微控平台（第一步）
 | callbackUrl | string | HTTP回调地址 |
 | status | string | 状态（0：正常，1：冻结，2：到期） |
 
-{% hint style="danger" %}
-**此接口调用一次即可，Authorization认证信息永不失效。~**
+{% hint style="info" %}
+**此接口调用一次即可，Authorization认证信息正常情况下永不失效**
+
+**（除非调用退出微控平台、账户到期等）**
 {% endhint %}
 
 **请求参数示例**
 
-```text
+```javascript
 {    
    "account": "18013350963",
    "password": "123456"
@@ -62,7 +60,7 @@ description: 登录微控平台（第一步）
 
 **成功返回示例**
 
-```text
+```javascript
 {
     "message": "成功",
     "code": "1000",
@@ -80,14 +78,14 @@ description: 登录微控平台（第一步）
         "callbackUrl": null,
         "status": 0,
         "wcIds": null,
-        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXNzd29yZCI6ImUxMGFkYzM5NDliYTU5YWJiZTU2ZTA1N2YyMGY4ODNlYXZ1cHE9SGNTNXQwKGJvJiIsImlzcyI6InhpbmdzaGVuZyIsImFjY291bnQiOiIxMjM0NTY3ODkxMCJ9.x9bT9wDPAwGhJg7rTo0k4I0FlteKqK4AW7G9FsANgcM"
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXNzd29yZCI6ImUxMGFkYzM5NDliYTU5YWJiZTU2ZTA1N2YyMGY4ODNlYXZ1cHE9SGNTNXQwKGJvJiIsImlzcyI6InhpbmdzaGVuZyIsImFjY291bnQiOiIxMjM0NTY3ODkxMCJ9.x9bT9wDPAwGhJg7rTo0k4I0FlteKqK4AW7G9FsANgce"
     }
 }
 ```
 
 **错误返回示例**
 
-```text
+```javascript
 {
     "message": "失败",
     "code": "1001",

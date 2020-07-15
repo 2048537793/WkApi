@@ -1,16 +1,13 @@
----
-description: 初始化好友列表
----
-
-# 初始化好友列表
+# 获取好友列表
 
 {% hint style="info" %}
-**获取好友列表之前必须调用此接口。**
+* **获取好友列表之前必须调用**[**初始化好友列表接口**](https://www.wkteam.cn/api-wen-dang2/deng-lu/initFriendLists.html)**。**
+* **此接口不会返回好友详细信息，如需获取详细信息，请调用**[**获取联**](https://www.wkteam.cn/api-wen-dang2/hao-you-cao-zuo/queryUserInfo.html)
 {% endhint %}
 
 **请求URL：**
 
-* `http://域名地址/initializeFriends`
+* `http://域名地址/getFriends`
 
 **请求方式：**
 
@@ -41,7 +38,11 @@ description: 初始化好友列表
 {
     "message": "成功",
     "code": "1000",
-    "data": null
+    "data": [
+        "wxid_hzkv98xxxxxxx3",
+        "wxid_vy27e0xxxxxxx2",
+        "wxid_0e671xxxxxxxx2"
+    ]
 }
 ```
 
@@ -59,7 +60,7 @@ description: 初始化好友列表
 
 | 参数名 | 类型 | 说明 |
 | :---: | :---: | :---: |
-| code | int | 1000成功、10001失败 |
-| msg | string | 反馈信息 |
-| data | JSONObject | 无 |
+| code | String | 1000成功  10001失败 |
+| msg | String | 反馈信息 |
+| data | JSONArray | 好友微信id |
 
