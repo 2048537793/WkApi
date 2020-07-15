@@ -2,75 +2,97 @@
 description: 转发朋友圈(对谁不可见)
 ---
 
-# 转发朋友圈\(对谁不可见\)
+# 转发朋友圈
 
 **简要描述：**
 
-* 发送朋友圈，\(对谁不可见\)
+* 转发朋友圈，直接xml数据。\(对谁不可见\)
 
 **请求URL：**
 
-* `http://localhost:18081/snsSendXmlInvisibleToWhom`
+* `http://域名地址/forwardSns`
 
 **请求方式：**
 
-* POST
+* POST 
 
 **请求头Headers：**
 
 * Content-Type：application/json
-* Authorization：Authorization值（登录获取二维码信息接口中返回的认证信息值）
+* Authorization：login接口返回
 
 **参数：**
 
 | 参数名 | 必选 | 类型 | 说明 |
-| :--- | :--- | :--- | :--- |
-| wId | 是 | string | 微信实例ID |
-| content | 是 | string | 收到的xml  |
-| blackLabelId | 是 | string | 对谁不可见，屏蔽标签的id |
-
-**返回数据：**
-
-| 参数名 | 类型 | 说明 |
-| :--- | :--- | :--- |
-| code | int | 1000成功，10001失败 |
-| msg | string | 反馈信息 |
+| :---: | :---: | :---: | :---: |
+| wId | 是 | String | 微信实例ID |
+| content | 是 | String | 收到的xml |
+| blackList | 否 | String | 对谁不可见 |
+| withUserList | 否 | String | 对谁可见 |
 
 **请求参数示例**
 
-```text
+```javascript
 {
-	"wId": "{{wId}}",
-	"content": "<TimelineObject><id><![CDATA[13244700339160101040]]></id><username><![CDATA[wxid_7khg7pr817k322]]></username><createTime><![CDATA[1578891317]]></createTime><contentDescShowType>0</contentDescShowType><contentDescScene>0</contentDescScene><private><![CDATA[0]]></private><contentDesc><![CDATA[-\n能瘦着就不要胖着！\n能美着就不要丑着！\n能富着就不要穷着！\n接下来给大家分享我稳变瘦变美变有💰的秘诀[奸笑][奸笑]]]></contentDesc><contentattr><![CDATA[0]]></contentattr><sourceUserName></sourceUserName><sourceNickName></sourceNickName><statisticsData></statisticsData><weappInfo><appUserName></appUserName><pagePath></pagePath></weappInfo><canvasInfoXml></canvasInfoXml><ContentObject><contentStyle><![CDATA[1]]></contentStyle><contentSubStyle><![CDATA[0]]></contentSubStyle><title></title><description></description><contentUrl></contentUrl><mediaList><media><id><![CDATA[13244700339702280350]]></id><type><![CDATA[2]]></type><title></title><description></description><private><![CDATA[0]]></private><url type=\"1\" md5=\"f5733dca86312d6f050aea74fa67ea94\"><![CDATA[http://shmmsns.qpic.cn/mmsns/6mXOeYa4HU9WGicjDCdKy7Per1Fsdcnjg9kicPtgNFFpE7ow6wNI0hNKCYrtPyVBMDhEr1lWRRlMo/0]]></url><thumb type=\"1\"><![CDATA[http://shmmsns.qpic.cn/mmsns/6mXOeYa4HU9WGicjDCdKy7Per1Fsdcnjg9kicPtgNFFpE7ow6wNI0hNKCYrtPyVBMDhEr1lWRRlMo/150]]></thumb><videoDuration><![CDATA[0.0]]></videoDuration><size totalSize=\"118055.0\" width=\"1080.0\" height=\"1080.0\"></size></media></mediaList></ContentObject><actionInfo><appMsg><mediaTagName></mediaTagName><messageExt></messageExt><messageAction></messageAction></appMsg></actionInfo><appInfo><id></id></appInfo><location poiClassifyId=\"\" poiName=\"\" poiAddress=\"\" poiClassifyType=\"0\" city=\"\"></location><publicUserName></publicUserName><streamvideo><streamvideourl></streamvideourl><streamvideothumburl></streamvideothumburl><streamvideoweburl></streamvideoweburl></streamvideo></TimelineObject>",
-	"blackLabelId": "2"
+     "wId": "xxxxxxx",
+     "content": "xxxxxxx"
 }
 ```
 
 **成功返回示例**
 
-```text
+```javascript
 {
     "message": "成功",
     "code": "1000",
     "data": {
-        "id": "13245592920948158529",
-        "userName": "wxid_wl9qchkanp9u22",
-        "nickName": null,
-        "createTime": 1578997721,
-        "objectDesc": "-\n能瘦着就不要胖着！\n能美着就不要丑着！\n能富着就不要穷着！\n接下来给大家分享我稳变瘦变美变有💰的秘诀[奸笑][奸笑]",
-        "commentUserList": null,
-        "likeUserList": null
+        "id": "xxxxxxx",
+        "userName": "xxxxxxx",
+        "nickName": "xxxxxxx",
+        "createTime": xxxxxxx,
+        "objectDesc": {
+            "xml": "xxxxxxx",
+            "len": xxxxxxx
+        },
+        "likeCount": xxxxxxx,
+        "snsLikes": [],
+        "commentCount": xxxxxxx,
+        "snsComments": []
     }
 }
 ```
 
 **错误返回示例**
 
-```text
+```javascript
 {
     "message": "失败",
     "code": "1001",
     "data": null
 }
 ```
+
+**返回数据：**
+
+| 参数名 | 类型 | 说明 |  |
+| :---: | :---: | :---: | :--- |
+| code | int | 1000成功，10001失败 |  |
+| msg | String | 反馈信息 |  |
+| id | String | 朋友圈ID |  |
+| userName | String | 微信号 |  |
+| createTime | String | 时间 |  |
+| objectDesc | JSONObject | 朋友圈内容 |  |
+| xml | String | 朋友圈xml |  |
+| len | int | xml 长度 |  |
+| commentId | int | 评论标识 | replyCommentId |
+| replyCommentId | int | 回复评论标识 |  |
+| deleteFlag | int | 删除标识 |  |
+| isNotRichText | int | 是否试富文本 |  |
+| content | String | 评论内容 |  |
+| commentId | int | 评论ID |  |
+| snsLikes | JSONArray | 点赞用户列表 |  |
+| userName | String | 微信号 |  |
+| nickName | String | 昵称 |  |
+| type | int | 点赞类型 |  |
+| createTime | int | 点赞时间 |  |
 

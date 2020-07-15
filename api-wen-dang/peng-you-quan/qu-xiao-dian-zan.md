@@ -1,16 +1,12 @@
----
-description: 朋友圈评论
----
-
-# 朋友圈评论
+# 取消点赞
 
 **简要描述：**
 
-* 朋友圈评论
+* 取消点赞
 
 **请求URL：**
 
-* `http://域名地址/snsComment`
+* `http://域名地址/snsCancelPraise`
 
 **请求方式：**
 
@@ -26,18 +22,14 @@ description: 朋友圈评论
 | 参数名 | 必选 | 类型 | 说明 |
 | :---: | :---: | :---: | :---: |
 | wId | 是 | String | 微信实例ID |
-| id | 是 | String | 朋友圈标识 |
-| replyCommentId | 是 | int | 评论标识（回复评论） |
-| content | 是 | String | 内容 |
+| id | 是 | String | 微信号 |
 
 **请求参数示例**
 
 ```javascript
 {
-    "wId": "0000016e-abcd-0ea8-0002-d8c2dfdb0bf3",
-    "id": "13205404970681503871",
-    "replyCommentId" : 0,
-    "content": "充满力量"
+     "wId": "b7ad08a6-77c2-4ad6-894a-29993b84c0e4",
+     "id": "13351161735026061409"
 }
 ```
 
@@ -51,13 +43,6 @@ description: 朋友圈评论
 }
 ```
 
-**返回数据：**
-
-| 参数名 | 类型 | 说明 |
-| :---: | :---: | :---: |
-| code | int | 1000成功，10001失败 |
-| msg | String | 反馈信息 |
-
 **错误返回示例**
 
 ```javascript
@@ -67,4 +52,11 @@ description: 朋友圈评论
     "data": null
 }
 ```
+
+**返回数据：**
+
+| 参数名 | 类型 | 说明 |
+| :---: | :---: | :---: |
+| code | int | 1000成功，10001失败 |
+| msg | String | 反馈信息 |
 

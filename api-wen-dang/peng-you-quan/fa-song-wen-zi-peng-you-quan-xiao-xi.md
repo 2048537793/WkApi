@@ -2,7 +2,7 @@
 description: 发送文字朋友圈消息
 ---
 
-# 发送文字朋友圈消息
+# 发送文字朋友圈
 
 **简要描述：**
 
@@ -10,36 +10,29 @@ description: 发送文字朋友圈消息
 
 **请求URL：**
 
-* `http://localhost:18081/snsSend`
+* `http://域名地址/snsSend`
 
 **请求方式：**
 
-* POST
+* POST 
 
-**参数：**
+**请求头Headers：**
+
+* Content-Type：application/json
+* Authorization：login接口返回
+
+  **参数：** 
 
 | 参数名 | 必选 | 类型 | 说明 |
-| :--- | :--- | :--- | :--- |
-| wId | 是 | string | 微信实例ID |
-| content | 是 | string | 文本内容 |
-| groupUser | 否 | string | 对谁可见（传微信号,多个用;分隔） |
-| blackList | 否 | string | 对谁不可见（传微信号,多个用;分隔） |
-
-**返回数据：**
-
-| 参数名 | 类型 | 说明 |
-| :--- | :--- | :--- |
-| code | int | 1000成功，10001失败 |
-| msg | string | 反馈信息 |
-| data |  |  |
-| id | string | ID |
-| userName | string | 微信号 |
-| createTime | string | 发送时间 |
-| objectDesc | string | 内容 |
+| :---: | :---: | :---: | :---: |
+| wId | 是 | String | 微信实例ID |
+| content | 是 | String | 文本内容 |
+| groupUser | 否 | String | 对谁可见（传微信号,多个用;分隔） |
+| blackList | 否 | String | 对谁不可见（传微信号,多个用;分隔） |
 
 **请求参数示例**
 
-```text
+```javascript
 {
     "wId": "0000016e-6343-089e-0001-e2ef939176f6",
     "content": "这是一条文本朋友圈消息"
@@ -48,7 +41,7 @@ description: 发送文字朋友圈消息
 
 **成功返回示例**
 
-```text
+```javascript
 {
     "message": "成功",
     "code": "1000",
@@ -63,11 +56,23 @@ description: 发送文字朋友圈消息
 
 **错误返回示例**
 
-```text
+```javascript
 {
     "message": "失败",
     "code": "1001",
     "data": null
 }
 ```
+
+**返回数据：**
+
+| 参数名 | 类型 | 说明 |
+| :---: | :---: | :---: |
+| code | int | 1000成功，10001失败 |
+| msg | String | 反馈信息 |
+| data |  |  |
+| id | String | ID |
+| userName | String | 微信号 |
+| createTime | String | 发送时间 |
+| objectDesc | String | 内容 |
 
