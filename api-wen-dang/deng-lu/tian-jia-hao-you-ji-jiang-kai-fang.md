@@ -68,7 +68,9 @@ description: 添加好友
       <td style="text-align:left">&#x9A8C;&#x8BC1;&#x6D88;&#x606F;</td>
     </tr>
   </tbody>
-</table>**返回数据：**
+</table>
+
+**返回数据：**
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- |

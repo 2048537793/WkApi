@@ -1,59 +1,25 @@
 # 接入指南（必读）
 
-###  技术要求
+### 1. 技术要求
 
-{% hint style="warning" %}
-* 因涉及服务接口回调，需研发人员掌握任意一种[JAVA](https://www.oracle.com/technetwork/java/javase/downloads/index.html)、[Go](https://golang.google.cn/)、[PHP](https://www.php.net/)、[Python](https://www.python.org/)、[Node.js](www.baidu.com)等后端代码
-* 客户需提供[外网服务器](https://zhidao.baidu.com/question/207831609.html)，在API对接中，假如您需要处理消息，则配置此地址即可接收消息
-{% endhint %}
+* 假如需要接收并处理微信消息，研发人员需掌握任意一种[JAVA、Go、PHP、Python、Node.js](https://baike.baidu.com/item/计算机编程语言)等后端代码即可。
 
-### 1. 准备工作
+### 2. 账号开通
 
-{% hint style="info" %}
-* 需添加[客服微信](gou-mai-shuo-ming.md)（licx758），提供**公司名称**、**手机号**索要**开发者账号、密码**
-{% endhint %}
+* 添加客服微信（最下方有客服二维码），提供**公司名称 / 个人姓名、手机号**申请注册开发者账号。
+* 免费提供24小时测试期限，如您对本API服务满意并且希望延长测试期限可根据实际情况[购买测试套餐](https://docs.wkteam.cn/gou-mai-shuo-ming)。
 
-### 2. 开发注意（必做）
+### 3. 如何接收消息
 
-{% hint style="success" %}
-* **所有接口的请求头部Header必须包含一个参数： Authorization\(验证账号是否授权 PS：从登录接口获取\)**
-* **Content-Type 设置成 application/json**
-{% endhint %}
+* **在与Wechat交互中**，用户可能会**处理 好友/群 的消息**，做到**自动回复**，**消息转发**、**消息交互**等处理，可以[调用回调接口配置](https://docs.wkteam.cn/api-wen-dang/xiao-xi-jie-shou/huo-qu-hui-tiao-xiao-xi/she-zhi-http-hui-tiao-di-zhi)即可。 
 
-**​Header参数说明：**
-
-| 参数 | 是否必须 | 说明 |
-| :--- | :--- | :--- |
-| **Authorization** | 是 | **验证账号是否授权** |
-| **Content-Type** | 是 | **请求头部参数格式** |
-
-**返回Code说明：**
-
-| code状态码 | 状态说明 | code状态码 |
-| :--- | :--- | :--- |
-| 1000 | 成功 | 1000 |
-| 1001 | 失败 | 1001 |
-| 1002 | 无认证信息 | 1002 |
-| 1003 | 认证信息无效 | 1003 |
-| 1004 | 用户被禁用或到期 | 1004 |
-| 1005 | 认证信息过期 | 1005 |
-|  |  |  |
-
-### 4. 消息回调配置（可选）
-
-{% hint style="warning" %}
-* **可以选择**[**接口回调**](api-wen-dang/xiao-xi-jie-shou/huo-qu-hui-tiao-xiao-xi/)**版本配置消息即可。**
-* **假如不需要处理消息，可以选择忽略**
-{% endhint %}
-
-### 5.自助测试（可选）
+### 4.自助测试
 
 {% hint style="info" %}
-* [PostMan测试请点击这里](https://explore.postman.com/user/DCZoyMjyDryaJCD)，不知道步骤，就看[本网页左侧栏API文档](api-wen-dang/)。
-* 测试如遇到步骤问题，请查看本[文档API释义](api-wen-dang/)，每个接口下面都会有教学
+[**PostMan测试请点击这里**](https://explore.postman.com/user/DCZoyMjyDryaJCD)**，具体步骤请查看API文档，每个接口下面都会有教学，祝您测试顺利**
 {% endhint %}
 
-![](.gitbook/assets/image%20%2815%29.png)
+![](.gitbook/assets/image%20%2838%29.png)
 
 ## 加入我们   <a id="join-us"></a>
 
@@ -66,6 +32,4 @@
 {% endhint %}
 
  
-
-![ &#x552E;&#x524D;&#x54A8;&#x8BE2;                                                            &#x4EA7;&#x54C1;&#x7ECF;&#x7406;](.gitbook/assets/image%20%2836%29.png)
 

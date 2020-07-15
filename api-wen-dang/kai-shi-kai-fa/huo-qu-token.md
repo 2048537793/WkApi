@@ -49,7 +49,9 @@ description: 获取微信二维码（第二步）
       <td style="text-align:left">&#x767B;&#x9646;&#x65B9;&#x5F0F;&#xFF0C;&#x4F20;2&#x54E6;</td>
     </tr>
   </tbody>
-</table>**返回数据：**
+</table>
+
+**返回数据：**
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- |
