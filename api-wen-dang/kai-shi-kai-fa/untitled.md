@@ -31,6 +31,7 @@ description: 执行微信登录（第三步）
 | wAccount | string | 手机上显示的微信号 |
 | sex | int | 性别 |
 | status | string | 状态: 0已失效、1等待扫码、2扫码待确定、3扫码登录成功 |
+| type | int | 是否权限最高：1、默认      2、是 |
 
 **请求参数示例**
 
@@ -57,6 +58,7 @@ description: 执行微信登录（第三步）
         "headUrl": "http://wx.qlogo.cn/mmhead/ver_1/71icIciaZ1RvFpIJUGp6pCI6Uydndbib74FyUY6pPrEKO1F4cVTgfx5QjnoShlGZamsMicOYWccSqUicZ1LsKtQjtr5icyQiau5aAiaLafMPo9e1vQU/0",
         "smallHeadImgUrl": "http://wx.qlogo.cn/mmhead/ver_1/71icIciaZ1RvFpIJUGp6pCI6Uydndbib74FyUY6pPrEKO1F4cVTgfx5QjnoShlGZamsMicOYWccSqUicZ1LsKtQjtr5icyQiau5aAiaLafMPo9e1vQU/132",
         "status": 3
+        "type":1
     }
 }
 ```
