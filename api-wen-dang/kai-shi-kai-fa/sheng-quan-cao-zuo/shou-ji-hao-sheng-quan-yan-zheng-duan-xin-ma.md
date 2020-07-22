@@ -1,4 +1,4 @@
-# 手机号升权-发送短信码
+# 手机号升权-验证短信码
 
 
 
@@ -12,7 +12,7 @@
 
 **请求URL：**
 
-* `http://域名地址/smsLoginGet`
+* `http://域名地址/smsLoginConfirm`
 
 **请求方式：**
 
@@ -28,6 +28,7 @@
 | 参数名   | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
 | mobile | 是 | string | 微信绑定的手机号 |
+| code | 是 | string | 短信验证码 |
 
 **返回数据：**
 
@@ -39,7 +40,7 @@
 
 {% hint style="danger" %}
 * **此接口需要post多次，**
-* **第一次post** -&gt; 返回xml环境异常，里面有url  web网页打开，根据提示滑块，滑块完成后，界面卡住，无需多管，继续Post
+* **第一次post** -&gt; 返回xml包含安全验证，里面有url  web网页打开，根据提示验证，可选择扫码登录 扫码完成且授权完成后，继续Post。
 * **第二次Post-**》返回成功，手机号10S左右收到短信验证码，[然后执行验证接口](shou-ji-hao-sheng-quan-yan-zheng-duan-xin-ma.md)
 {% endhint %}
 
