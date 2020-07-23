@@ -94,6 +94,7 @@
     * [获取收藏夹内容](api-wen-dang/shou-cang-jia/huo-qu-shou-cang-jia-nei-rong.md)
     * [删除收藏夹内容](api-wen-dang/shou-cang-jia/shan-chu-shou-cang-jia-nei-rong.md)
   * [账户管理](api-wen-dang/wei-xin-guan-li/README.md)
+    * [查询账号在线的微信](api-wen-dang/wei-xin-guan-li/cha-xun-zhang-hao-zai-xian-de-wei-xin.md)
     * [批量下线微信号](api-wen-dang/wei-xin-guan-li/pi-liang-xia-xian-wei-xin-hao.md)
     * [查询微信是否在线](api-wen-dang/wei-xin-guan-li/cha-xun-wei-xin-shi-fou-zai-xian.md)
     * [退出微控平台](api-wen-dang/wei-xin-guan-li/tui-chu-wei-kong-ping-tai.md)

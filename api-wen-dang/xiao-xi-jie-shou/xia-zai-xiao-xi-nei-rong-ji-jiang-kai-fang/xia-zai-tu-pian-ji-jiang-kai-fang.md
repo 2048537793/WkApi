@@ -25,6 +25,7 @@ description: 下载图片
 | fromUser | 是 | string | 发送人的微信号 |
 | toUser | 是 | string | 接收人的微信号 |
 | content | 是 | string | 收到的消息的xml数据 |
+| type | 否 | int | 0：普通图片（默认）  1：高清图片 |
 
 **返回数据：**
 
