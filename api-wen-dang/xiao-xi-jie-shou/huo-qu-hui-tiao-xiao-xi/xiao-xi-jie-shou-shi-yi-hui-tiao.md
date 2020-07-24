@@ -43,8 +43,8 @@ description: 微信消息内容释义
       <td style="text-align:center">int</td>
       <td style="text-align:center">
         <p>0:&#x597D;&#x53CB;&#x8BF7;&#x6C42;</p>
-        <p>1:&#x7FA4;&#x9080;&#x8BF7;</p>
-        <p>2&#xFF1A;&#x7FA4;&#x540D;&#x7247;</p>
+        <p>1:&#x7FA4;&#x76F8;&#x5173;&#x901A;&#x77E5;&#x6D88;&#x606F;</p>
+        <p>2:&#x7FA4;&#x540D;&#x7247;</p>
         <p>3:&#x4E2A;&#x4EBA;&#x540D;&#x7247;</p>
         <p>4:&#x4E0B;&#x7EBF;</p>
         <p>5:&#x79C1;&#x804A;&#x6587;&#x672C;&#x6D88;&#x606F;</p>
@@ -57,7 +57,7 @@ description: 微信消息内容释义
         <p>12:&#x7FA4;&#x804A;&#x8BED;&#x97F3;&#x6D88;&#x606F;</p>
         <p>13:&#x79C1;&#x804A;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x6D88;&#x606F;</p>
         <p>14:&#x7FA4;&#x804A;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x6D88;&#x606F;</p>
-        <p>15&#xFF1A;&#x597D;&#x53CB;&#x76F8;&#x5173;&#x901A;&#x77E5;&#x6D88;&#x606F;&#xFF08;&#x540C;&#x610F;&#x6DFB;&#x52A0;&#x597D;&#x53CB;&#x7B49;&#xFF09;&#x3001;</p>
+        <p>15&#xFF1A;&#x597D;&#x53CB;&#x76F8;&#x5173;&#x901A;&#x77E5;&#x6D88;&#x606F;&#x3001;</p>
         <p>16&#xFF1A;&#x4FEE;&#x6539;&#x597D;&#x53CB;&#x5907;&#x6CE8;&#x901A;&#x77E5;&#x6D88;&#x606F;&#x3001;</p>
         <p>17&#xFF1A;&#x5220;&#x9664;&#x76F8;&#x5173;&#x901A;&#x77E5;&#x6D88;&#x606F;</p>
       </td>
