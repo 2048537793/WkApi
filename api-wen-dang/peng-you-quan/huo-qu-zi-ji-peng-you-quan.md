@@ -26,7 +26,7 @@ description: 获取自己朋友圈
 | 参数名 | 必选 | 类型 | 说明 |
 | :---: | :---: | :---: | :---: |
 | wId | 是 | String | 微信实例ID |
-| firstPageMd5 | 是 | String | 首次传:""，下次传返回的firstPageMd5 |
+| firstPageMd5 | 是 | String | 首次传:""，下次传返回的firstPageMd5，假如未返回，直接传上次的即可 |
 | maxId | 是 | int | 获取首页的话：0 |
 
 **请求参数示例**
