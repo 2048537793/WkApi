@@ -27,7 +27,7 @@ description: 获取好友朋友圈
 | :---: | :---: | :---: | :---: |
 | wId | 是 | String | 微信实例ID |
 | wcId | 是 | String | 微信号 |
-| firstPageMd5 | 是 | int | 首次传："",第二次获取传列表中最后一项的firstPageMd5 |
+| firstPageMd5 | 是 | int | 首次传:""，下次传返回的firstPageMd5，假如未返回，直接传上次的即可 |
 | maxId | 是 | long | 首次传：0，第二次获取传列表中最后一项的id |
 
 **请求参数示例**
