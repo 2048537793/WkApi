@@ -16,7 +16,7 @@
 ### 4.自助测试
 
 {% hint style="info" %}
-[**PostMan测试请点击这里**](https://explore.postman.com/user/DCZoyMjyDryaJCD)**，具体步骤请查看API文档，每个接口下面都会有教学，祝您测试顺利**
+* [**PostMan测试请点击这里**](https://explore.postman.com/user/DCZoyMjyDryaJCD)**，具体步骤请查看API文档，每个接口下面都会有教学，祝您测试顺利**
 {% endhint %}
 
 ![](.gitbook/assets/image%20%2839%29.png)
