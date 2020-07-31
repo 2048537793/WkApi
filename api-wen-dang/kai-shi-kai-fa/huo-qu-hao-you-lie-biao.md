@@ -1,8 +1,8 @@
 # 获取通讯录列表（好友/群）
 
 {% hint style="info" %}
-* **获取通讯录列表之前必须调用**[**初始化好友列表接口。**](https://docs.wkteam.cn/api-wen-dang/kai-shi-kai-fa/huo-qu-yong-hu-ji-ben-xin-xi)\*\*\*\*
-* **此接口不会返回好友详细信息，如需获取详细信息，请调用**[**获取联系人信息**](../deng-lu/huo-qu-lian-xi-ren-xin-xi.md)\*\*\*\*
+* **获取通讯录列表之前必须调用**[**初始化通讯录列表接口。**](https://docs.wkteam.cn/api-wen-dang/kai-shi-kai-fa/huo-qu-yong-hu-ji-ben-xin-xi)\*\*\*\*
+* **此接口不会返回好友/群的详细信息，如需获取详细信息，请调用**[**获取联系人信息**](../deng-lu/huo-qu-lian-xi-ren-xin-xi.md)\*\*\*\*
 {% endhint %}
 
 **请求URL：**
