@@ -2,15 +2,15 @@
 description: 初始化好友列表
 ---
 
-# 初始化好友列表
+# 初始化通讯录列表
 
 {% hint style="info" %}
-**获取好友列表之前必须调用此接口。**
+**获取通讯录列表之前必须调用此接口。**
 {% endhint %}
 
 **请求URL：**
 
-* `http://域名地址/initializeFriends`
+* `http://域名地址/initAddressList`
 
 **请求方式：**
 
@@ -39,8 +39,8 @@ description: 初始化好友列表
 
 ```javascript
 {
-    "message": "成功",
     "code": "1000",
+    "message": "初始化通讯录成功",
     "data": null
 }
 ```
