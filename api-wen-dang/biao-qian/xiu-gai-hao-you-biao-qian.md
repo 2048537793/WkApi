@@ -21,7 +21,7 @@ description: 修改标签
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
 | wId | 是 | string | 微信实例ID |
-| userName | 是 | string | 用户wcId |
+| userName | 是 | string | 好友微信id |
 | labelIdList | 是 | string | 用户标签，用逗号分隔，如"14,1" |
 
 **返回数据：**
