@@ -53,7 +53,7 @@ description: 获取微信二维码（第二步）
       <td style="text-align:left">&#x5426;</td>
       <td style="text-align:left">int</td>
       <td style="text-align:left">&#x4EE3;&#x7406;IP&#x901A;&#x9053;&#xFF1A;1:&#x5E7F;&#x5DDE; 2: &#x5357;&#x4EAC;
-        3:&#x676D;&#x5DDE; 4:&#x4E0A;&#x6D77; 5:&#x6DF1;&#x5733;&#xFF08;,&#x5EFA;&#x8BAE;&#x5F00;&#x53D1;&#x8005;&#x968F;&#x610F;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x767B;&#x5F55;&#x901A;&#x9053;&#x5373;&#x53EF;&#xFF09;</td>
+        3:&#x676D;&#x5DDE; 4:&#x4E0A;&#x6D77; 5:&#x6DF1;&#x5733;&#xFF08;&#x5EFA;&#x8BAE;&#x5F00;&#x53D1;&#x8005;&#x968F;&#x610F;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x767B;&#x5F55;&#x901A;&#x9053;&#x5373;&#x53EF;&#xFF09;</td>
     </tr>
   </tbody>
 </table>
