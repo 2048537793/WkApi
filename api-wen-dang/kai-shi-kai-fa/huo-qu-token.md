@@ -34,9 +34,11 @@ description: 获取微信二维码（第二步）
     <tr>
       <td style="text-align:left">wcId</td>
       <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">string</td>
+      <td style="text-align:left"><b><code>string</code></b>
+      </td>
       <td style="text-align:left">
-        <p>&#x767B;&#x5F55;&#x7684;&#x5FAE;&#x4FE1;id &#xFF08;&#x9996;&#x6B21;&#x626B;&#x7801;&#x4E0D;&#x9700;&#x8981;&#x4F20;&#xFF0C;&#x5386;&#x53F2;&#x626B;&#x7801;&#x5FC5;&#x987B;&#x4F20;&#x7528;&#x6765;&#x627E;&#x4E0A;&#x6B21;&#x767B;&#x5F55;&#x8BBE;&#x5907;&#x7684;&#xFF09;</p>
+        <p><b><code>&#x767B;&#x5F55;&#x7684;&#x5FAE;&#x4FE1;id &#xFF08;&#x9996;&#x6B21;&#x626B;&#x7801;&#x4E0D;&#x9700;&#x8981;&#x4F20;&#xFF0C;&#x5386;&#x53F2;&#x626B;&#x7801;&#x5FC5;&#x987B;&#x4F20;&#xFF01;&#xFF01;&#xFF01;&#xFF01;&#x7528;&#x6765;&#x627E;&#x4E0A;&#x6B21;&#x767B;&#x5F55;&#x8BBE;&#x5907;&#xFF09;</code></b>
+        </p>
         <p><a href="https://docs.wkteam.cn/api-wen-dang/kai-shi-kai-fa/untitled">&#x6267;&#x884C;&#x767B;&#x5F55;&#x63A5;&#x53E3;</a>&#x4F1A;&#x8FD4;&#x56DE;&#x6B64;&#x5B57;&#x6BB5;&#xFF0C;&#x8BB0;&#x5F97;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x5E93;&#x91CC;</p>
       </td>
     </tr>
@@ -45,6 +47,13 @@ description: 获取微信二维码（第二步）
       <td style="text-align:left">&#x662F;</td>
       <td style="text-align:left">int</td>
       <td style="text-align:left">&#x767B;&#x9646;&#x65B9;&#x5F0F;&#xFF0C;&#x4F20;2&#x5373;&#x53EF;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">proxy</td>
+      <td style="text-align:left">&#x5426;</td>
+      <td style="text-align:left">int</td>
+      <td style="text-align:left">&#x4EE3;&#x7406;IP&#x901A;&#x9053;&#xFF1A;1:&#x5E7F;&#x5DDE; 2: &#x5357;&#x4EAC;
+        3:&#x676D;&#x5DDE; 4:&#x4E0A;&#x6D77; 5:&#x6DF1;&#x5733;&#xFF08;,&#x5EFA;&#x8BAE;&#x5F00;&#x53D1;&#x8005;&#x968F;&#x610F;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x767B;&#x5F55;&#x901A;&#x9053;&#x5373;&#x53EF;&#xFF09;</td>
     </tr>
   </tbody>
 </table>
@@ -61,7 +70,7 @@ description: 获取微信二维码（第二步）
 
 {% hint style="danger" %}
 * 调用本接口得到二维码图片地址
-* 调用[执行登录接口](https://docs.wkteam.cn/api-wen-dang/kai-shi-kai-fa/untitled)（**此时接口不会返回，是根据用户是否扫码返回数据，最长等待150S**）
+* 调用[执行登录接口](https://docs.wkteam.cn/api-wen-dang/kai-shi-kai-fa/untitled)（第三步）（**此时第三步的接口不会立即返回，是根据用户是否扫码返回数据，最长等待150S**）
 * 开发者将本接口**返回的二维码让用户去扫码**
 * **扫码结束后，方才的**[**执行登录接口**](https://docs.wkteam.cn/api-wen-dang/kai-shi-kai-fa/untitled)**会返回登录成功或者登录失败**
 * 注意：请求所有**接口**需在**header包裹Authorization\(必须\)**
@@ -72,7 +81,8 @@ description: 获取微信二维码（第二步）
 ```javascript
 {
     "wcId": "wxid_wl9qchkanp9u22",
-    "type": 2
+    "type": 2,
+    "proxy":1
 }
 ```
 
